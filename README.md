@@ -16,8 +16,8 @@ Upon release of a treat: a servo motor is actuated to open and close briefly and
 
 ## Project Structure
 ```markdown
- - 'main.cpp' - Source C++ code for program
- - 'platformio.ini' - Specifications for specific Arduino board and additional libraries used
+ - `main.cpp` - Source C++ code for program
+ - `platformio.ini` - Specifications for specific Arduino board and additional libraries used
 ```
 
 ## How to Run
