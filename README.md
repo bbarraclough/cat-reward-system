@@ -1,8 +1,6 @@
 # cat-reward-system
 Arduino implementation in C++ to train my fat cat to run on a cat wheel. Rewarding cat with a treat actuated by a servo motor every time the rotary encoder detects the wheel has been spinning for incrementing periods of time. 'Gambling states' are incorporated to mimic training stages when training pets manually.
 
-## Photo
-
 ## How It Works
 Rotary encoder with low pass filter for debouncing increments or decrements a counter from spinning the wheel. 'loop' function checks the state of the wheel spinning (clockwise, counter clockwise, no spin) every 0.25s by checking how the counter has changed.
 If the wheel has been spinning the same direction for more than the threshold time, the state machine depending on 'gamblingState' is used to determine whether a treat will be dispensed. 
