@@ -8,9 +8,9 @@ Rotary encoder with low pass filter for debouncing increments or decrements a co
 If the wheel has been spinning the same direction for more than the threshold time, the state machine depending on 'gamblingState' is used to determine whether a treat will be dispensed. 
 ```markdown
 gambling states:
- - countinuous reinforcment: when total treats dispensed <= 50, treat dispensed every time
- - fixed ratio: when 50 < total treats dispensed <= 100, treat dispensed every third time
- - variable: when total treats dispensed > 100, treat dispensed probabilistically, probability = 1 - exp(-time over threshold / treatCounter)
+ - `countinuous reinforcment`: when total treats dispensed <= 50, treat dispensed every time
+ - `fixed ratio`: when 50 < total treats dispensed <= 100, treat dispensed every third time
+ - `variable`: when total treats dispensed > 100, treat dispensed probabilistically, probability = 1 - exp(-time over threshold / treatCounter)
 ```
 Upon release of a treat: a servo motor is actuated to open and close briefly and the time threshold is increased linearly.
 
